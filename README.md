@@ -1,2 +1,2 @@
-# Personal-portfolio
+# vue-component-pagination
 
