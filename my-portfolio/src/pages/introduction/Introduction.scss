@@ -1,0 +1,53 @@
+.introduction {
+    text-align: center;
+    font-weight: 600;
+    font-size: 26px;
+}
+#name-intro {
+    animation: name 3s ease forwards;
+    width: 100%;
+}
+#profession {
+    animation: profession 2s ease forwards;
+    width: 100%;
+}
+#introduction__button {
+    border: 2px solid rgb(97, 53, 53);
+    padding: 15px;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(97, 53, 53);
+    animation: introductionButton 4s ease forwards;
+    cursor: pointer;
+}
+#introduction__button:hover {
+    color: white;
+    background-color: rgb(97, 53, 53);
+    border: 2px solid rgb(255, 255, 255); 
+}
+@keyframes name {
+    0%{ 
+        margin-bottom: 300px; 
+        opacity: 0; 
+    }
+    30%{ 
+        opacity: 0.6; 
+    }
+    100%{ margin-bottom: 0px; width: 1; opacity: 1;}
+}
+@keyframes profession {
+    0%{ 
+        opacity: 0;
+
+    }
+    50%{ 
+        opacity: 0;
+
+    }
+    100%{ opacity: 1; margin-top: 0px;}
+}
+@keyframes introductionButton {
+    0%{ opacity: 0;}
+    70%{ opacity: 0;}
+    100%{ opacity: 1;}
+}

@@ -1,6 +1,27 @@
 .App {
   text-align: center;
 }
+.wrapper {
+    // position: relative;
+    // max-width: 100vw;
+    color: rgb(97, 53, 53);
+    font-family: 'Baloo Tammudu 2', cursive;
+    .awssld__bullets {
+        display: none;
+    }
+    .awssld__wrapper {
+        height: 100vh;
+    }
+    .awssld__content {
+        height: 100vh;
+    }
+    .awssld__container {
+        height: 100vh;
+    }
+    .awssld__content {
+        background-color: rgb(241, 241, 241);
+    }
+}
 
 .App-logo {
   height: 40vmin;
