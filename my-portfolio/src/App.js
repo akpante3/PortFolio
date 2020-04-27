@@ -19,7 +19,7 @@ function App() {
   return (
     <div className={['wrapper', 'toggle-nav-buttons'].join(' ')}>
       <Nav />
-      <AwesomeSlider animation="cubeAnimation">
+      <AwesomeSlider animation="cubeAnimation" selected={1} infinite={false} mobileTouch={true}>
           { templates }
       </AwesomeSlider>
     </div>
