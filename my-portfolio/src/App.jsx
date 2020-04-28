@@ -1,7 +1,7 @@
 import React from 'react';
 import AwesomeSlider from 'react-awesome-slider';
 import Nav from './component/Nav/Nav';
-import Indroduction from './pages/introduction/Introduction';
+import Indroduction from './pages/introduction/introduction';
 import Menu from './pages/menu/Menu';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 import 'react-awesome-slider/dist/styles.css';
@@ -19,18 +19,11 @@ const templates = list.map((data, index) =>
 );
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showMenu: true
-    };
-  }
-
   render () {
     return (
       <div>
         <div>
-          { this.state.showMenu ? <Menu /> : '' }
+          <Menu />
         </div>
         <div className={['wrapper', 'toggle-nav-buttons'].join(' ')}>
             <Nav />
