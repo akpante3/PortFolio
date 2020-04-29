@@ -1,6 +1,41 @@
 .App {
   text-align: center;
 }
+.menu-button {
+    display: flex;
+    cursor: pointer;
+    z-index: 1500;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    fill: #aeaeae;
+    &__item--1 {
+     animation: nav-item 1s forwards;
+    }
+    &__item--2 {
+        animation: nav-item 1.5s forwards;
+    }
+    &__item--3 {
+        animation: nav-item 2s forwards;
+    }
+    &__close {
+        animation: menu-button 2s linear;
+    }
+}
+
+@keyframes nav-item {
+    from { width: 0px;}
+    to { width: 150px;}
+}
+@keyframes menu-button {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(180deg);
+      }
+}
+
 .wrapper {
     // position: relative;
     // max-width: 100vw;
