@@ -1,6 +1,8 @@
 import React from 'react';
 import AwesomeSlider from 'react-awesome-slider';
 import Indroduction from './pages/introduction/Introduction';
+import Skills from './pages/skills/Skills';
+import Portfolio from './pages/portfolio/Portfolio';
 import Menu from './pages/menu/Menu';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 import 'react-awesome-slider/dist/styles.css';
@@ -8,8 +10,8 @@ import './App.scss';
 
 const list = [
   <Indroduction />,
-  <div>2</div>,
-  <div>3</div>,
+  <Portfolio />,
+  <Skills />,
   <div>4</div>
 ]
 
@@ -21,7 +23,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showMenu: true
+      showMenu: false
     };
   }
   toggleMenu = () => {
@@ -40,7 +42,7 @@ class App extends React.Component {
              <div className="item item--3"></div>
            </div>
         </div>
-        <div className={['wrapper', 'toggle-nav-buttons'].join(' ')}>
+        <div className="wrapper">
             <AwesomeSlider animation="cubeAnimation" selected={1} infinite={false} mobileTouch={true}>
                 { templates }
             </AwesomeSlider>

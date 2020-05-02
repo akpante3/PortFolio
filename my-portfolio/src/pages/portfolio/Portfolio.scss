@@ -1,0 +1,85 @@
+.portfolio {
+    max-width: 900px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10%;
+    &__header {
+        font-size: 35px;
+        font-weight: 700;
+        margin: 0px;
+        line-height: 20px;
+    }
+    &__detail {
+        font-size: 18px;
+    }
+    &__project {
+        // display: flex;
+        width: 100%;
+        @media (min-width: 1100px) {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        &__image {
+            max-width: 430px;
+            width: 95%;
+            height: 250px;
+            margin-top: 15px;   
+            box-shadow: 1px 1px 3px 0 rgba(50, 50, 54, 0.13), 0 0 3px 1px rgba(63, 63, 68, 0.05);
+            cursor: pointer;
+            position: relative;
+            opacity: 1;
+            overflow: hidden;
+            &:hover {
+                box-shadow: none;
+                img {
+                    zoom: 100%;
+                    // opacity: 0.6;
+                    transform: scale(1.1);
+                    filter: brightness(50%);
+                }
+            }
+            &:hover &__view {
+                top: 10%;
+                left: 5%;
+            }
+            &:hover &__discription {
+                bottom: 10%;
+                left: 5%;
+            }
+
+            &__view {
+                position: absolute;
+                top: -100%;
+                width: 100%;
+                display: flex;
+                transition: 0.4s;
+                // transform: translateY(-100%)
+            }
+            &__discription {
+                position: absolute;
+                display: flex;
+                margin-right: 5px;
+                bottom: -100%;
+                width: 100%;
+                line-height: 1px;
+                font-size: 19px;
+                font-weight: 400;
+                transition: 0.4s;
+                color: white;
+            }             
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 1;
+            }
+        }
+        &__details {
+            margin-left: 0px;
+            @media (min-width: 1100px) {
+                margin-left: 18px;
+            }
+        }
+    }
+}
