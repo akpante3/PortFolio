@@ -13,13 +13,13 @@
 #profession {
     animation: profession 2s ease forwards;
     width: 100%;
+    margin-bottom: 30px;
 }
 #introduction__button {
     border: none;
     padding: 15px;
     font-size: 17px;
     font-weight: 600;
-    color: #534842;
     animation: introductionButton 4s ease forwards;
     cursor: pointer;
     transition: 0.7s;
@@ -36,7 +36,7 @@
     30%{ 
         opacity: 0.6; 
     }
-    100%{ margin-bottom: 0px; width: 1; opacity: 1;}
+    100%{ margin-bottom: 10px; width: 1; opacity: 1;}
 }
 @keyframes profession {
     0%{ 

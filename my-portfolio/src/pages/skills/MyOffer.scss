@@ -1,0 +1,30 @@
+.my-offer {
+    max-width: 700px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10%;
+    &__header {
+        font-size: 35px;
+        font-weight: 700;
+        margin: 0px;
+        color: #ca2f1d;
+        line-height: 20px;
+        margin-bottom: 20px;
+        img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        &--sub-header {
+            margin-top: 10px;
+            font-size: 25px;
+            font-weight: 700;
+            color: #ca2f1d;
+            img {
+                width: 30px;
+                height: 20px;
+                margin-right: 10px;
+            }       
+        }
+    }
+}

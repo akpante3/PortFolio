@@ -1,7 +1,7 @@
 import React from 'react';
 import AwesomeSlider from 'react-awesome-slider';
 import Indroduction from './pages/introduction/Introduction';
-import Skills from './pages/skills/Skills';
+import MyOffer from './pages/skills/MyOffer';
 import Portfolio from './pages/portfolio/Portfolio';
 import Menu from './pages/menu/Menu';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
@@ -11,7 +11,7 @@ import './App.scss';
 const list = [
   <Indroduction />,
   <Portfolio />,
-  <Skills />,
+  <MyOffer />,
   <div>4</div>
 ]
 
@@ -43,7 +43,7 @@ class App extends React.Component {
            </div>
         </div>
         <div className="wrapper">
-            <AwesomeSlider animation="cubeAnimation" selected={1} infinite={false} mobileTouch={true}>
+            <AwesomeSlider animation="cubeAnimation" selected={2} infinite={false} mobileTouch={true}>
                 { templates }
             </AwesomeSlider>
         </div>

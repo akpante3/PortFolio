@@ -5,36 +5,73 @@ function Portfolio() {
   return (
     <div className="portfolio">
         <div className="portfolio__header">
-            Portfolio
+            <img src={require('./portfolio.svg')} alt="portfolio" />PORTFOLIO
         </div>
-        <div className="portfolio__detail">All projects here were <bold>created by me from scratch</bold> both frontend and backend.</div>
+        <div className="portfolio__detail">All projects here were created by me from scratch both frontend and backend.</div>
         <div className="portfolio__project">
             <div className="portfolio__project__image">
                 <img src={require('./project_1.jpg')} alt="hello" />
                 <div className="portfolio__project__image__view">
-                    <button className="btn btn--sm">View</button>
+                    <div className="tag tag--button tag--md">View</div>
                 </div> 
                 <div className="portfolio__project__image__discription">
-                    <div className="portfolio__project__image__discription__name">SHOPMATE</div>
-                    <div className="portfolio__project__image__discription__tags">
-                       <div className="portfolio__project__image__discription__tags"></div>
+                    <div>
+                        <div className="portfolio__project__image__discription__name">SHOPMATE</div>
+                        <div className="tags">
+                            <div className="tag tag--sm">React</div>
+                            <div className="tag tag--sm">Redux</div>
+                            <div className="tag tag--sm">FrontEnd</div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div className="portfolio__project__image">
                 <img src={require('./project_1.jpg')} alt="hello" />
                 <div className="portfolio__project__image__view">
-                <button className="btn btn--sm">View</button></div> 
+                    <div className="tag tag--button tag--md">View</div>
+                </div> 
+                <div className="portfolio__project__image__discription">
+                    <div>
+                        <div className="portfolio__project__image__discription__name">SHOPMATE</div>
+                        <div className="tags">
+                            <div className="tag tag--sm">React</div>
+                            <div className="tag tag--sm">Redux</div>
+                            <div className="tag tag--sm">FrontEnd</div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className="portfolio__project__image">
                 <img src={require('./project_1.jpg')} alt="hello" />
                 <div className="portfolio__project__image__view">
-                <button className="btn btn--sm">View</button></div> 
+                    <div className="tag tag--button tag--md">View</div>
+                </div> 
+                <div className="portfolio__project__image__discription">
+                    <div>
+                        <div className="portfolio__project__image__discription__name">SHOPMATE</div>
+                        <div className="tags">
+                            <div className="tag tag--sm">React</div>
+                            <div className="tag tag--sm">Redux</div>
+                            <div className="tag tag--sm">FrontEnd</div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className="portfolio__project__image">
                 <img src={require('./project_1.jpg')} alt="hello" />
                 <div className="portfolio__project__image__view">
-                <button className="btn btn--sm">View</button></div> 
+                    <div className="tag tag--button tag--md">View</div>
+                </div> 
+                <div className="portfolio__project__image__discription">
+                    <div>
+                        <div className="portfolio__project__image__discription__name">SHOPMATE</div>
+                        <div className="tags">
+                            <div className="tag tag--sm">React</div>
+                            <div className="tag tag--sm">Redux</div>
+                            <div className="tag tag--sm">FrontEnd</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
