@@ -18,19 +18,19 @@ function Skills() {
           <li>mentoring the team,</li>
           <li>estimating tasks,</li>
           <li>researching possible techs,</li>
-          <li>leading, launching and monitoring the project.</li>
        </ul>
       <div>
           <div className="my-offer__header--sub-header"><img src={require('../../images/icons/userInterface.svg')} alt="portfolio" />FRONT-END ENGINEER</div>
           <div className="line"></div>
-          <div>I specialize in applications written in both React and Angular. Recently I became also a huge fan of one-way data flow and Redux-like architecture and also typed languages, e.g. TypeScript.</div>
+          <div>I specialize in applications written in both React and Vue. other include Angular, TypeScript.</div>
           <br />
           <div>My current experience and skills in front-end includes:</div>
           <ul>
             <li>good sense of design and UX,</li>
-            <li>full integration of front-end development using tools like Webpack with features like automatic code reload, code minifications, multiple environments support, CI/CD, Storybook components library, automated testing of accessibility, server-side render and visual snapshots,</li>
-            <li>huge experience in almost all of the JS ecosystems, by having used in the past many libraries like Next.js, React, Redux, Redux-Observable, RxJS, Angular, Ionic Framework, Backbone, jQuery, Lodash/Underscore and many else</li>
-            <li></li>
+            <li>solid experience in almost all of the JS ecosystems, by having used in the past many libraries like Nuxt.js, Next.js, React, Redux, RxJS, Angular, Vuex, Vue, jQuery, Lodash/Underscore and many etc</li>
+            <li>writing unit and e2e tests</li>
+            <li>full integration of front-end development using tools like Webpack, multiple environments support, CI/CD, automated testing, server-side render and visual snapshots.</li>
+            <li>refactoring existing applications</li>
           </ul>
        </div>
        <div>
@@ -41,19 +41,19 @@ function Skills() {
             <ul>
               <li>cooperation with APIs, remote data synchronizations, cloud servers, asynchronous workers</li>
               <li>using different types of databases (like PostgreSQL, MySQL, Elasticsearch, MongoDB, Redis)</li>
-              <li>refactoring existing applications, by improving code readibility, separating concerns into separate functions/classes/modules, taking the business logic out from your request/response layer into separate modules (DDD), and moving the app architecture into an event-based one</li>
+              <li>refactoring existing applications</li>
               <li>writing unit and e2e tests</li>
             </ul>        
        </div>
        <div>
-            <div className="my-offer__header--sub-header">DEV-OPS, DESIGN, UI, PROJECT LEADERSHIP, TEAM MENTORSHIP</div>
+            <div className="my-offer__header--sub-header"><img src={require('../../images/icons/others.svg')} alt="portfolio" />DEV-OPS, DESIGN, UI, PROJECT LEADERSHIP, TEAM MENTORSHIP</div>
             <div className="line"></div>
-            <div>Thus, not only I have coded their back-end and front-end codebases, but often I also had to care about other things needed in a successful web application project:</div>
-            <div>My current experience and skills in front-end includes:</div>
+            <div>Thus, not only I have coded their back-end and front-end codebases, but often I also been invovled in planning and all other aspects of the project:</div>
             <ul>
-              <li>good planning of UI and thinking how it affects the UX;</li>
+              <li>project management and planning skills;</li>
               <li>i am a certified AWS solution architure;</li>
-              <li>launching, deployment and monitoring the app after the release;</li>
+              <li>experience with launching, deployment and monitoring applications;</li>
+              <li>continous integration and containerization</li>
               <li>code reviews, onboarding and mentoring team members;</li>
             </ul>        
        </div>
