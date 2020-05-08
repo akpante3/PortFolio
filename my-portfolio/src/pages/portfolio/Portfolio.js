@@ -10,7 +10,7 @@ function Portfolio() {
         <div className="portfolio__detail">All projects here were created by me from scratch both frontend and backend.</div>
         <div className="portfolio__project">
             <div className="portfolio__project__image">
-                <img src={require('./project_1.jpg')} alt="hello" />
+                <img src={require('../../images/project_1.jpg')} alt="hello" />
                 <div className="portfolio__project__image__view">
                     <div className="tag tag--button tag--md">View</div>
                 </div> 
@@ -26,7 +26,7 @@ function Portfolio() {
                 </div>
             </div>
             <div className="portfolio__project__image">
-                <img src={require('./project_1.jpg')} alt="hello" />
+                <img src={require('../../images/project_1.jpg')} alt="hello" />
                 <div className="portfolio__project__image__view">
                     <div className="tag tag--button tag--md">View</div>
                 </div> 
@@ -42,7 +42,7 @@ function Portfolio() {
                 </div>
             </div>
             <div className="portfolio__project__image">
-                <img src={require('./project_1.jpg')} alt="hello" />
+                <img src={require('../../images/project_1.jpg')} alt="hello" />
                 <div className="portfolio__project__image__view">
                     <div className="tag tag--button tag--md">View</div>
                 </div> 
@@ -58,7 +58,7 @@ function Portfolio() {
                 </div>
             </div>
             <div className="portfolio__project__image">
-                <img src={require('./project_1.jpg')} alt="hello" />
+                <img src={require('../../images/project_1.jpg')} alt="hello" />
                 <div className="portfolio__project__image__view">
                     <div className="tag tag--button tag--md">View</div>
                 </div> 
