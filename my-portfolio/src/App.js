@@ -4,6 +4,7 @@ import Indroduction from './pages/introduction/Introduction';
 import MyOffer from './pages/skills/MyOffer';
 import Portfolio from './pages/portfolio/Portfolio';
 import Menu from './pages/menu/Menu';
+import Contact from './pages/contact/Contact.js';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 import 'react-awesome-slider/dist/styles.css';
 import './App.scss';
@@ -12,7 +13,7 @@ const list = [
   <Indroduction />,
   <Portfolio />,
   <MyOffer />,
-  <div>4</div>
+  <Contact />
 ]
 
 const templates = list.map((data, index) =>
