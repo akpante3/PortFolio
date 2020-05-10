@@ -1,0 +1,32 @@
+.contact {
+    margin-top: 250px;
+    text-align: center;
+    width: 100%;
+    &__header {
+        font-size: 35px;
+        font-weight: 700;
+        margin: 0px;
+        line-height: 20px;
+        margin-bottom: 20px;
+        color: #ca2f1d;
+        img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+    }
+    &__content {
+        img {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%) brightness(80%) contrast(110%);
+            transform: scaleX(-1);
+            transition: 1s;
+        }
+        &:hover {
+            img {
+                filter: brightness(105%) contrast(110%);
+                transform: scaleX(1);   
+            }             
+        }
+    }
+}
