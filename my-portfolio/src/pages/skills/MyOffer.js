@@ -34,7 +34,7 @@ function Skills() {
           </ul>
        </div>
        <div>
-            <div className="my-offer__header--sub-header"><img src={require('../../images/icons/offer.svg')} alt="portfolio" />BACK-END ENGINEER</div>
+            <div className="my-offer__header--sub-header"><img src={require('../../images/icons/backend.svg')} alt="portfolio" />BACK-END ENGINEER</div>
             <div className="line"></div>
             <div>In the back-end, I specialize in  NodeJS with framework like Express and AdonisJS. alternatively, i also skilled in python</div>
             <div>My current experience and skills in front-end includes:</div>

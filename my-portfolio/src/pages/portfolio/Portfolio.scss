@@ -36,11 +36,16 @@
             margin: 20px 0px;
             height: 250px;
             margin-top: 15px;   
-            box-shadow: 1px 1px 3px 0 rgba(50, 50, 54, 0.13), 0 0 3px 1px rgba(63, 63, 68, 0.05);
+            box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
             cursor: pointer;
             position: relative;
             opacity: 1;
             overflow: hidden;
+            border: 1.5px rgb(255, 255, 255) solid;
+            border-radius: 3px;
+            img {
+                transition: 1s;
+            }
             &:hover {
                 box-shadow: none;
                 img {
