@@ -17,6 +17,13 @@
             margin-right: 10px;
         }
     }
+    &__view-more {
+        font-weight: 600;
+        font-size: 26px;
+        &:hover {
+            color: gray;
+        }        
+    }
     &__detail {
         font-size: 18px;
         font-weight: 500;

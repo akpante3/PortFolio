@@ -1,8 +1,10 @@
 import React from "react";
 import Home from '../pages/home/home'
+import NotFound from '../pages/404/404'
 import {
   Switch,
   Route,
+  Redirect
 } from "react-router-dom";
 
 /**
@@ -11,7 +13,8 @@ import {
  */
 const Routes = () => ( 
   <Switch>
-      <Route exact path='/:section' component={Home} />
+      <Route name="home" path='/victor-obije/:section' component={Home} />
+      <Route path="*" component={NotFound} />
   </Switch>
 );
 

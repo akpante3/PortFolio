@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './MyOffer.scss';
 
 function Skills() {
+  useEffect(() => {
+    console.log('mount')
+  }, []);
   return (
     <div className="my-offer">
        <div className="my-offer__header"><img src={require('../../images/icons/offer.svg')} alt="portfolio" />MY OFFER</div>
@@ -50,11 +53,11 @@ function Skills() {
             <div className="line"></div>
             <div>Thus, not only I have coded their back-end and front-end codebases, but often I also been invovled in planning and all other aspects of the project:</div>
             <ul>
-              <li>project management and planning skills;</li>
-              <li>i am a certified AWS solution architure;</li>
-              <li>experience with launching, deployment and monitoring applications;</li>
+              <li>project management and planning skills</li>
+              <li>i am a certified AWS solution architure</li>
+              <li>experience with launching, deployment and monitoring applications(AWS, Heroku, now.sh etc..)</li>
               <li>continous integration and containerization</li>
-              <li>code reviews, onboarding and mentoring team members;</li>
+              <li>code reviews, onboarding and mentoring team members</li>
             </ul>        
        </div>
        {/* DEV-OPS, DESIGN, UI, PROJECT LEADERSHIP, TEAM MENTORSHIP */}

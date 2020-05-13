@@ -1,14 +1,19 @@
 import React from 'react';
+import {
+  Link
+} from "react-router-dom";
+import ReactCSSTransitionGroup from 'react-transition-group';
 import './Menu.scss';
 
-function Menu() {
+function Menu(props) {
+
   return (
-    <div className="menu">
+    <div className={['menu', props.open ? 'menu--open' : 'menu--close'].join(' ')}>
        <div className="menu__items">
-            <div className="menu__item">about</div>
-            <div className="menu__item">portfolio</div>
-            <div className="menu__item">labs</div>
-            <div className="menu__item">contact</div>
+            <div className="menu__item" onClick={props.toggleMenu}><Link to="victor-obije/about">about</Link></div>
+            <div className="menu__item" onClick={props.toggleMenu}><Link to="victor-obije/portfolio">portfolio</Link></div>
+            <div className="menu__item" onClick={props.toggleMenu}><Link to="victor-obije/my-offer">my offer</Link></div>
+            <div className="menu__item" onClick={props.toggleMenu}><Link to="victor-obije/contact">contact</Link></div>
        </div>
     </div>
   );

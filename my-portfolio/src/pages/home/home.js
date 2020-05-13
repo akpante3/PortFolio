@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {
-  BrowserRouter as Router, useParams
+  useParams, useHistory
 } from "react-router-dom";
 import AwesomeSlider from 'react-awesome-slider';
 import Indroduction from '../introduction/Introduction';
@@ -25,39 +25,43 @@ const templates = list.map((data, index) =>
 
 
 const  App = () => {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     showMenu: false,
-  //     selected: 1
-  //   };
-  // }
+  let history = useHistory()
   let { section } = useParams();
   const [showMenu, setshowMenu] = useState(false);
-  const [selectedTemplate, setselectedTemplate] = useState(false);
-
+  const [selectedTemplate, setselectedTemplate] = useState(null);
+   
+  useEffect(() => {
+    selectedTemplates ()
+  }, [section]);
+ 
   const toggleMenu = () => {
     setshowMenu(!showMenu)
   }
 
-  const selectedTemplates = () => {
-    // console.log(section, 'this is section')
-    // if (section === 'indroduction') {
-    //   this.setState({ ...this.state, selected: 0 })
-    // } else if (section === 'portfolio') {
-    //   this.setState({ ...this.state, selected: 1 })
-    // } else if (section === 'my-offer') {
-    //   this.setState({ ...this.state, selected: 2 })
-    // } else {
-    //   this.setState({ ...this.state, selected: 3})
-    // }
+  const selectedTemplates = (e) => {
+      const nextIndex = e ? e.nextIndex : section
+    if ( nextIndex === 0 || nextIndex === 'about') {
+		  history.push('/victor-obije/about')
+      setselectedTemplate(0)
+     } else if ( nextIndex === 1 || nextIndex === 'portfolio') {
+      history.push('/victor-obije/portfolio')
+      setselectedTemplate(1)
+     } else if ( nextIndex === 2 || nextIndex === 'my-offer') {
+      history.push('/victor-obije/my-offer')
+      setselectedTemplate(2)
+     } else if ( nextIndex === 3 || nextIndex === 'contact') {
+      history.push('/victor-obije/contact')
+      setselectedTemplate(3)
+     } else {
+      history.push('/victor-obije/about')
+     }
   }
 
 
     return (
       <div>
         <div>
-          { showMenu ? <Menu /> : '' }
+          { showMenu ? <Menu open={showMenu} toggleMenu={toggleMenu} /> : '' }
         </div>
         <div className="menu-button" onClick={toggleMenu}>
            <div className={ showMenu ? 'menu-button__toggle--close' : 'menu-button__toggle' }>
@@ -67,9 +71,13 @@ const  App = () => {
            </div>
         </div>
         <div className="wrapper">
-            <AwesomeSlider animation="cubeAnimation" selected={0} infinite={false} mobileTouch={true}>
-                { templates }
-            </AwesomeSlider>
+		{ selectedTemplate !== null ? (
+			        <AwesomeSlider animation="cubeAnimation" selected={selectedTemplate} onTransitionRequest={selectedTemplates} infinite={false} mobileTouch={true}>
+						{ templates }
+					</AwesomeSlider>
+		) : (
+			''
+		)}
         </div>
       </div>
     );

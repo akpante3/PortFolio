@@ -5,6 +5,30 @@ body {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     color: #0e0e0e
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.btn {
+    border: 0.1px solid #0e0e0e;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.7s;
+    cursor: pointer;
+    transition: 0.7s;
+    &--md {
+        font-size: 17px;
+        font-weight: 600;
+        padding: 10px;
+        width: 90px;
+    }
+    &:hover {
+        border: 0.1px solid gray;
+        background-color: #b6b6b6;;
+        color: white; 
+    }
+}
+
 .highlight {
   color: #ca2f1d;
 }
@@ -97,6 +121,12 @@ body {
     to { transform: rotate(-136deg); }
 }
 
+@keyframes btn {
+    0%{ opacity: 0;}
+    70%{ opacity: 0;}
+    100%{ opacity: 1;}
+}
+
 .wrapper {
     .awssld__bullets {
         display: none;
@@ -128,16 +158,7 @@ body {
 }
 
 
-.btn {
-    border: none;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.7s;
-    &--sm {
-        padding: 5px;
-        font-size: 14px;
-    }  
-}
+
 
 // tags
 .tags {
