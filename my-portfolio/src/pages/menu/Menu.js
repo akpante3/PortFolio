@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Link
 } from "react-router-dom";
-import ReactCSSTransitionGroup from 'react-transition-group';
 import './Menu.scss';
 
 function Menu(props) {
