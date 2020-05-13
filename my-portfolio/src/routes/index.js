@@ -13,7 +13,7 @@ import {
  */
 const Routes = () => ( 
   <Switch>
-      <Route name="home" path='/victor-obije/:section' component={Home} />
+      <Route name="home" path='/:section' component={Home} />
       <Route path="*" component={NotFound} />
   </Switch>
 );

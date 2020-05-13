@@ -41,19 +41,19 @@ const  App = () => {
   const selectedTemplates = (e) => {
       const nextIndex = e ? e.nextIndex : section
     if ( nextIndex === 0 || nextIndex === 'about') {
-		  history.push('/victor-obije/about')
+		  history.push('/about')
       setselectedTemplate(0)
      } else if ( nextIndex === 1 || nextIndex === 'portfolio') {
-      history.push('/victor-obije/portfolio')
+      history.push('/portfolio')
       setselectedTemplate(1)
      } else if ( nextIndex === 2 || nextIndex === 'my-offer') {
-      history.push('/victor-obije/my-offer')
+      history.push('/my-offer')
       setselectedTemplate(2)
      } else if ( nextIndex === 3 || nextIndex === 'contact') {
-      history.push('/victor-obije/contact')
+      history.push('/contact')
       setselectedTemplate(3)
      } else {
-      history.push('/victor-obije/about')
+      history.push('/about')
      }
   }
 

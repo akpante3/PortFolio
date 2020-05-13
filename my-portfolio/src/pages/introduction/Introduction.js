@@ -10,7 +10,7 @@ function Introduction() {
       <div>
         <div id="name-intro">Hello, I am <span className="highlight">Victor Obije</span></div>
         <div id="profession">I'm a Full-Stack Software Engineer <img src={require('../../images/icons/nerd.png') } /></div>
-        <Link to={'/victor-obije/contact'}><button className="btn btn--md introduction__button">contact</button></Link>
+        <Link to={'/contact'}><button className="btn btn--md introduction__button">contact</button></Link>
       </div>
     </div>
   );
