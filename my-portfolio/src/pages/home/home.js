@@ -39,7 +39,8 @@ const  App = () => {
   }
 
   const selectedTemplates = (e) => {
-      const nextIndex = e ? e.nextIndex : section
+    const nextIndex = e ? e.nextIndex : section
+
     if ( nextIndex === 0 || nextIndex === 'about') {
 		  history.push('/about')
       setselectedTemplate(0)
@@ -72,7 +73,7 @@ const  App = () => {
         </div>
         <div className="wrapper">
 		{ selectedTemplate !== null ? (
-			        <AwesomeSlider animation="cubeAnimation" selected={selectedTemplate} onTransitionRequest={selectedTemplates} infinite={false} mobileTouch={true}>
+			    <AwesomeSlider animation="cubeAnimation" selected={selectedTemplate} onTransitionRequest={selectedTemplates} infinite={false} mobileTouch={true}>
 						{ templates }
 					</AwesomeSlider>
 		) : (
