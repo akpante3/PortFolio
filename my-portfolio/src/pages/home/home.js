@@ -72,12 +72,12 @@ const  App = () => {
            </div>
         </div>
         <div className="wrapper">
-		{ selectedTemplate !== null ? (
-			    <AwesomeSlider animation="cubeAnimation" selected={selectedTemplate} onTransitionRequest={selectedTemplates} infinite={false} mobileTouch={true}>
-						{ templates }
-					</AwesomeSlider>
-		) : (
-			''
+		     { selectedTemplate !== null ? (
+			        <AwesomeSlider animation="cubeAnimation" selected={selectedTemplate} onTransitionRequest={selectedTemplates} infinite={false} mobileTouch={true}>
+						    { templates }
+              </AwesomeSlider>
+          ) : (
+            ''
 		)}
         </div>
       </div>
