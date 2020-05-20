@@ -1,4 +1,5 @@
 import React from "react";
+import page from '../pages'
 import Home from '../pages/home/home'
 import NotFound from '../pages/404/404'
 import {
@@ -13,6 +14,7 @@ import {
  */
 const Routes = () => ( 
   <Switch>
+      {/* <Route path='/' component={page} />  */}
       <Route name="home" path='/:section' component={Home} />
       <Route path="*" component={NotFound} />
   </Switch>

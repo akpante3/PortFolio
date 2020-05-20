@@ -1,0 +1,9 @@
+{
+    "routes": [
+        {
+          "src": "/?",
+          "status": 302,
+          "headers": { "Location": "/about" }
+        }
+    ]
+}
