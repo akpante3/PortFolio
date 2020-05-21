@@ -6,21 +6,21 @@ function Portfolio() {
        {
            id:1,
            link: 'https://dairynomics.netlify.app/',
-           name: 'DARYNOMICS',
+           name: 'Darynomics',
            tech:['Vue', 'Vuex', 'SCSS', 'NodeJ', 'Express'],
            image: require('../../images/Dairynomics.png')
        },
        {
             id:2,
             link: 'https://picture-grid-app.now.sh/',
-            name: 'PICTURE GRID',
+            name: 'Picture Grid',
             tech:['Vue', 'Vuex', 'Nuxt', 'SCSS'],
             image: require('../../images/grid_app.png')
         },
         {
             id:3,
             link: 'https://github.com/akpante3/Editor',
-            name: 'JAVASCRIPT EDITOR',
+            name: 'Javascript Editor',
             tech:['NodeJs', 'ExpressJs', 'Html'],
             image: require('../../images/code_editor.png')
         },
