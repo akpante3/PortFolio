@@ -5,10 +5,10 @@ function Portfolio() {
     const list = [
        {
            id:1,
-           link: 'https://e-commerce-clothing.herokuapp.com/',
-           name: 'SHOPMATE',
-           tech:['React', 'Redux', 'SCSS'],
-           image: require('../../images/project_1.jpg')
+           link: 'https://dairynomics.netlify.app/',
+           name: 'DARYNOMICS',
+           tech:['Vue', 'Vuex', 'SCSS', 'NodeJ', 'Express'],
+           image: require('../../images/Dairynomics.png')
        },
        {
             id:2,
@@ -59,7 +59,7 @@ function Portfolio() {
             <div className="portfolio__header">
                 <img src={require('./portfolio.svg')} alt="portfolio" />PORTFOLIO
             </div>
-            <div className="portfolio__detail">All projects here were created by me from scratch both frontend and backend.</div>
+            <p className="portfolio__detail">Over the years I have been actively involved working with distributed Engineering teams. These are some of my <span>Personal</span>  and <span>Team</span> projects i have contributed to.</p>
             <div className="portfolio__project">
               <ProjectTemplate />
             </div>

@@ -3,7 +3,6 @@
     width: 100%;
     padding: 10px;
     margin-top: 10%;
-    padding: 20px;
     &__header {
         font-size: 35px;
         font-weight: 700;
@@ -28,6 +27,9 @@
         font-size: 18px;
         font-weight: 500;
         margin-bottom: 10px;
+        span {
+            color: #ca2f1d
+        }
     }
     &__project {
         // display: flex;
