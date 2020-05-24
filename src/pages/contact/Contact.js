@@ -10,6 +10,7 @@ function Contact() {
         <div className="contact__content"><a href="https://www.linkedin.com/in-a78003187/"><img src={require('../../images/icons/linkedin.svg')} alt="hello" /></a></div>
         <div className="contact__content"><a href="https://gitlab.com/Obije"><img src={require('../../images/icons/gitlab.svg')} alt="hello" /></a></div>
         <div className="contact__content"><a href="mailto:obije.victor5@gmail.org"><img src={require('../../images/icons/gmail.svg')} alt="hello" /></a></div>
+        <div className="contact__content"><a href="https://twitter.com/akpante_kip"><img src={require('../../images/icons/twitter.svg')} alt="hello" /></a></div>
       </div>
     </div>
   );
