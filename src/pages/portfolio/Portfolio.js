@@ -7,21 +7,21 @@ function Portfolio() {
            id:1,
            link: 'https://dairynomics.netlify.app/',
            name: 'Darynomics',
-           tech:['VueJS', 'Vuex', 'SCSS', 'NodeJ', 'Express'],
-           image: require('../../images/Dairynomics.png')
+           tech:['VueJS', 'Vuex', 'SCSS', 'NodeJ', 'Express',],
+           image: require('../../images/Dairynomics-min.png')
        },
        {
             id:2,
             link: 'https://picture-grid-app.now.sh/',
             name: 'Picture Grid',
             tech:['VueJS', 'Vuex', 'Nuxt', 'SCSS'],
-            image: require('../../images/grid_app.png')
+            image: require('../../images/grid_app-min.png')
         },
         {
             id:3,
-            link: 'https://shopmatee-ui-ux.herokuapp.com/',
+            link: 'https://akpante3.github.io/e-commerce-UI-UX/',
             name: 'ShopMate',
-            tech:['UI/UX', 'Html', 'CSS'],
+            tech:['UI/UX', 'Html', 'CSS3'],
             image: require('../../images/shopmate-min.png')
         },
         {
@@ -29,15 +29,22 @@ function Portfolio() {
             link: 'https://github.com/akpante3/fast-food-fast',
             name: 'Fast Food Fast',
             tech:['ReactJS', 'NodeJs','ExpressJs'],
-            image: require('../../images/events_1.png')
+            image: require('../../images/fast-food.png')
         },
         {
-            id:4,
+            id: 5,
             link: 'https://dashboard.flutterwave.com/',
             name: 'Rave',
-            tech:['VueJS', 'NodeJs','ExpressJs'],
+            tech:['VueJS', 'Vuex', 'NodeJs','ExpressJs'],
             image: require('../../images/Rave-min.png')
-        }
+        },
+        {
+            id:6,
+            link: 'https://event-management-app.now.sh/',
+            name: 'Product',
+            tech:['VueJS', 'UI/UX', 'CSS3'],
+            image: require('../../images/events_1.png')
+        },
     ]
 
     const ProjectTemplate = () => {
