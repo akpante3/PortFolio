@@ -8,15 +8,18 @@
     }
     &--open {
         animation: menu-wrapper 0.8s ease forwards;
+        display: block;
     }
     &--close {
-        animation: menu-wrapper-hide 0.8s ease forwards;       
+        animation: menu-wrapper-hide 0.8s ease forwards;
+        display: block;   
     }
     width: 100%;
     height: 100vh;
     z-index: 1000;
     position: absolute;
     text-align: center;
+    display: none;
     &__items {
         margin-top: 25vh;
         display: inline-block;

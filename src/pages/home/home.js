@@ -30,6 +30,7 @@ const  App = () => {
   let history = useHistory()
   let { section } = useParams();
   const [showMenu, setshowMenu] = useState(false);
+  const [menuClass, setMenuClass] = useState('');
   const [isDay, setIsDay] = useState(true);
   const [selectedTemplate, setselectedTemplate] = useState(null);
    
@@ -39,6 +40,7 @@ const  App = () => {
  
   const toggleMenu = () => {
     setshowMenu(!showMenu)
+    showMenu ? setMenuClass('menu--close') : setMenuClass('menu--open')
   }
 
   const toggleTheme = () => {
@@ -69,9 +71,9 @@ const  App = () => {
     return (
       <div className={!isDay ? 'theme--black' : ''}>
         <div>
-          <Menu open={showMenu} toggleMenu={toggleMenu} theme={isDay} />
+          <Menu open={showMenu} toggleMenu={toggleMenu} theme={isDay} class={menuClass}/>
         </div>
-        <div className="menu-button" onClick={toggleMenu}>
+        <div className="menu-button" onClick={toggleMenu} >
            <div className={ showMenu ? 'menu-button__toggle--close' : 'menu-button__toggle' }>
              <div className="item item--1"></div>
              <div className="item item--2"></div>
