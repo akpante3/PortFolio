@@ -29,15 +29,36 @@ a {
     }
 }
 
+.theme {
+    &--black {
+        .wrapper {
+            .awssld__content {
+              background-color: #40434e;
+              color: rgb(247, 247, 247);
+            }
+        }
+        
+    }
+}
+
 .highlight {
   color: #ca2f1d;
+}
+
+.theme-switch {
+    position: absolute;
+    top: 6%;
+    right: 5%;
+    width: 40px;
+    z-index: 1500;
+    cursor: pointer;
 }
 .menu-button {
     cursor: pointer;
     z-index: 1500;
     position: absolute;
     top: 7%;
-    right: 3%;
+    left: 5%;
     fill: #aeaeae;
     transition: 1s;
     &__toggle{

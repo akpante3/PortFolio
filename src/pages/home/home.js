@@ -8,6 +8,8 @@ import MyOffer from '../skills/MyOffer';
 import Portfolio from '../portfolio/Portfolio';
 import Menu from '../menu/Menu';
 import Contact from '../contact/Contact.js';
+import { ReactComponent as Moon } from '../../images/icons/moon.svg';
+import { ReactComponent as Sun } from '../../images/icons/sun.svg';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 import 'react-awesome-slider/dist/styles.css';
 import '../../App.scss';
@@ -28,6 +30,7 @@ const  App = () => {
   let history = useHistory()
   let { section } = useParams();
   const [showMenu, setshowMenu] = useState(false);
+  const [isDay, setIsDay] = useState(true);
   const [selectedTemplate, setselectedTemplate] = useState(null);
    
   useEffect(() => {
@@ -36,6 +39,10 @@ const  App = () => {
  
   const toggleMenu = () => {
     setshowMenu(!showMenu)
+  }
+
+  const toggleTheme = () => {
+    setIsDay(!isDay)
   }
 
   const selectedTemplates = (e) => {
@@ -60,9 +67,9 @@ const  App = () => {
 
 
     return (
-      <div>
+      <div className={!isDay ? 'theme--black' : ''}>
         <div>
-          { showMenu ? <Menu open={showMenu} toggleMenu={toggleMenu} /> : '' }
+          <Menu open={showMenu} toggleMenu={toggleMenu} theme={isDay} />
         </div>
         <div className="menu-button" onClick={toggleMenu}>
            <div className={ showMenu ? 'menu-button__toggle--close' : 'menu-button__toggle' }>
@@ -71,6 +78,9 @@ const  App = () => {
              <div className="item item--3"></div>
            </div>
         </div>
+        <div className="theme-switch" onClick={() => toggleTheme()}>
+            { isDay ? <Sun /> : <Moon /> }
+        </div>
         <div className="wrapper">
 		     { selectedTemplate !== null ? (
 			        <AwesomeSlider animation="cubeAnimation" selected={selectedTemplate} onTransitionRequest={selectedTemplates} infinite={false} mobileTouch={true}>
@@ -78,7 +88,7 @@ const  App = () => {
               </AwesomeSlider>
           ) : (
             ''
-		)}
+		    )}
         </div>
       </div>
     );

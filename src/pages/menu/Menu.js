@@ -7,7 +7,7 @@ import './Menu.scss';
 function Menu(props) {
 
   return (
-    <div className={['menu', props.open ? 'menu--open' : 'menu--close'].join(' ')}>
+    <div className={['menu', props.open ? 'menu--open' : 'menu--close', props.theme ? 'menu--white' : 'menu--dark'].join(' ')}>
        <div className="menu__items">
             <div className="menu__item" onClick={props.toggleMenu}><Link to="/about">about</Link></div>
             <div className="menu__item" onClick={props.toggleMenu}><Link to="/portfolio">portfolio</Link></div>
