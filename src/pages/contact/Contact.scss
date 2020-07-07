@@ -18,7 +18,7 @@
     &__content {
         img {
             -webkit-filter: grayscale(100%);
-            filter: grayscale(100%) brightness(80%) contrast(110%);
+            filter: grayscale(100%) brightness(80%);
             transform: scaleX(-1);
             transition: 1s;
         }
