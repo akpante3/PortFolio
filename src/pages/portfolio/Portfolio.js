@@ -3,43 +3,50 @@ import './Portfolio.scss';
 
 function Portfolio() {
     const list = [
+        {
+            id:1,
+            link: 'https://forza-tau.vercel.app/',
+            name: 'Forza WEB',
+            tech:['ReactJS', 'SCSS', 'animations'],
+            image: require('../../images/forzaapp.png')
+        },
        {
-           id:1,
+           id:2,
            link: 'https://dairynomics.netlify.app/',
            name: 'Darynomics',
-           tech:['VueJS', 'Vuex', 'SCSS', 'NodeJ', 'Express',],
+           tech:['VueJS', 'Vuex', 'SCSS', 'NodeJ', 'Express'],
            image: require('../../images/Dairynomics-min.png')
        },
        {
-            id:2,
+            id:3,
             link: 'https://picture-grid-app.now.sh/',
             name: 'Picture Grid',
             tech:['VueJS', 'Vuex', 'Nuxt', 'SCSS'],
             image: require('../../images/grid_app-min.png')
         },
         {
-            id:3,
+            id:4,
             link: 'https://akpante3.github.io/e-commerce-UI-UX/',
             name: 'ShopMate',
             tech:['UI/UX', 'Html', 'CSS3'],
             image: require('../../images/shopmate-min.png')
         },
         {
-            id:4,
+            id:5,
             link: 'https://github.com/akpante3/fast-food-fast',
             name: 'Fast Food Fast',
             tech:['ReactJS', 'NodeJs','ExpressJs'],
             image: require('../../images/fast-food.png')
         },
         {
-            id: 5,
+            id: 6,
             link: 'https://dashboard.flutterwave.com/',
             name: 'Rave',
             tech:['VueJS', 'Vuex', 'NodeJs','ExpressJs'],
             image: require('../../images/Rave-min.png')
         },
         {
-            id:6,
+            id:7,
             link: 'https://event-management-app.now.sh/',
             name: 'Product',
             tech:['VueJS', 'UI/UX', 'CSS3'],
@@ -73,7 +80,7 @@ function Portfolio() {
             <div className="portfolio__header">
                 <img src={require('./portfolio.svg')} alt="portfolio" />PORTFOLIO
             </div>
-            <p className="portfolio__detail">Over the years I have been actively involved working with distributed Engineering teams. These are some of my <span>Personal</span>  and <span>Team</span> projects i have contributed to.</p>
+            <p className="portfolio__detail">Over the years, these are Outstanding Projects i have worked</p>
             <div className="portfolio__project">
               <ProjectTemplate />
             </div>

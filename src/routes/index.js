@@ -1,11 +1,9 @@
 import React from "react";
-import page from '../pages'
 import Home from '../pages/home/home'
 import NotFound from '../pages/404/404'
 import {
   Switch,
-  Route,
-  Redirect
+  Route
 } from "react-router-dom";
 
 /**

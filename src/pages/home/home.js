@@ -34,9 +34,7 @@ const  App = () => {
   const [isDay, setIsDay] = useState(true);
   const [selectedTemplate, setselectedTemplate] = useState(null);
    
-  useEffect(() => {
-    selectedTemplates ()
-  }, [section]);
+
  
   const toggleMenu = () => {
     setshowMenu(!showMenu)
@@ -66,7 +64,10 @@ const  App = () => {
       history.push('/about')
      }
   }
-
+  useEffect(() => {
+    selectedTemplates ()
+    // eslint-disable-next-line
+  }, [section]);
 
     return (
       <div className={!isDay ? 'theme--black' : ''}>

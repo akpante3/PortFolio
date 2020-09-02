@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Link,
   useHistory
 } from "react-router-dom";
 
@@ -9,7 +8,7 @@ function Menu(props) {
 
   return (
       <div>
-            { history.push('/about') }
+        { history.push('/about') }
       </div>
   );
 }
