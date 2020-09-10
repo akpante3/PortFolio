@@ -2,8 +2,7 @@
     "routes": [
         {
           "src": "/",
-          "status": 301,
-          "headers": { "Location": "/about" }
+          "dest": "about"
         }
     ]
 }
