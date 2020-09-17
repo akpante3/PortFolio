@@ -28,6 +28,24 @@ a {
         color: white; 
     }
 }
+.contact {
+    position: absolute;
+    z-index: 1500;
+    display: inline-block;
+    bottom: 3%;
+    left: 5%;
+    &__item {
+        width: 40px;
+        padding: 5px;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+            transform: rotate(360deg);
+            margin-left: 10px;
+        }
+
+    }
+}
 
 .theme {
     &--black {

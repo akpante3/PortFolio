@@ -16,8 +16,6 @@ function Skills() {
        <div>I can help you with all the sides of your project:</div>
        <ul>
           <li>verifying good UI/UX design,</li>
-          <li>leading/co-developing the back-end and front-end,</li>
-          <li>setting up the CI/CD,</li>
           <li>mentoring the team,</li>
           <li>estimating tasks,</li>
           <li>researching possible techs,</li>
@@ -45,7 +43,7 @@ function Skills() {
               <li>cooperation with APIs, remote data synchronizations, cloud servers, asynchronous workers</li>
               <li>using different types of databases (like PostgreSQL, MySQL, Elasticsearch, MongoDB, Redis)</li>
               <li>refactoring existing applications</li>
-              <li>writing unit and e2e tests</li>
+              <li>writing unit tests</li>
             </ul>        
        </div>
        <div>
@@ -56,7 +54,6 @@ function Skills() {
               <li>project management and planning skills</li>
               <li>i am a certified AWS solution architure</li>
               <li>experience with launching, deployment and monitoring applications(AWS, Heroku, now.sh etc..)</li>
-              <li>continous integration and containerization</li>
               <li>code reviews, onboarding and mentoring team members</li>
             </ul>        
        </div>

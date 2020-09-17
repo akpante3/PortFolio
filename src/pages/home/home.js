@@ -7,7 +7,6 @@ import Indroduction from '../introduction/Introduction';
 import MyOffer from '../skills/MyOffer';
 import Portfolio from '../portfolio/Portfolio';
 import Menu from '../menu/Menu';
-import Contact from '../contact/Contact.js';
 import { ReactComponent as Moon } from '../../images/icons/moon.svg';
 import { ReactComponent as Sun } from '../../images/icons/sun.svg';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
@@ -18,7 +17,6 @@ const list = [
   <Indroduction />,
   <Portfolio />,
   <MyOffer />,
-  <Contact />
 ]
 
 const templates = list.map((data, index) =>
@@ -59,9 +57,6 @@ const  App = () => {
      } else if ( nextIndex === 2 || nextIndex === '/my-offer') {
       history.push('/my-offer')
       setselectedTemplate(2)
-     } else if ( nextIndex === 3 || nextIndex === '/contact') {
-      history.push('/contact')
-      setselectedTemplate(3)
      } else {
       history.push('/about')
      }
@@ -85,6 +80,12 @@ const  App = () => {
         </div>
         <div className="theme-switch" onClick={() => toggleTheme()}>
             { isDay ? <Sun /> : <Moon /> }
+        </div>
+        <div className="contact">
+            <div className="contact__item"><a href="https://www.linkedin.com/in/victor-obije-a78003187/"><img src={require('../../images/icons/linkedin.svg')} alt="hello" /></a></div>
+            <div className="contact__item"><a href="https://github.com/akpante3"><img src={require('../../images/icons/github.svg')} alt="hello" /></a></div>
+            <div className="contact__item"><a href="mailto:obije.victor5@gmail.org"><img src={require('../../images/icons/gmail.svg')} alt="hello" /></a></div>
+            <div className="contact__item"><a href="https://twitter.com/akpante_kip"><img src={require('../../images/icons/twitter.svg')} alt="hello" /></a></div>
         </div>
         <div className="wrapper">
 		     { selectedTemplate !== null ? (

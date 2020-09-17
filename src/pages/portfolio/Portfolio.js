@@ -7,7 +7,7 @@ function Portfolio() {
             id:1,
             link: 'https://forza-tau.vercel.app/',
             name: 'Forza WEB',
-            tech:['ReactJS', 'SCSS', 'animations'],
+            tech:['ReactJS', 'Firebase', 'SCSS'],
             image: require('../../images/forzaapp.png')
         },
        {
@@ -26,6 +26,14 @@ function Portfolio() {
         },
         {
             id:4,
+            link: 'http://mouka-client-dev.tls-flutterwave.com/log-in',
+            name: 'Expense management',
+            tech:['VueJS', 'Vuex', 'SCSS', 'NodeJs'],
+            image: require('../../images/mouka-expense.png')
+        },
+
+        {
+            id:4,
             link: 'https://akpante3.github.io/e-commerce-UI-UX/',
             name: 'ShopMate',
             tech:['UI/UX', 'Html', 'CSS3'],
@@ -41,9 +49,16 @@ function Portfolio() {
         {
             id: 6,
             link: 'https://dashboard.flutterwave.com/',
-            name: 'Rave',
+            name: 'Flutterwave Rave',
             tech:['VueJS', 'Vuex', 'NodeJs','ExpressJs'],
             image: require('../../images/Rave-min.png')
+        },
+        {
+            id: 6,
+            link: 'http://egf.qkm.mybluehost.me/',
+            name: 'Signal Allaince',
+            tech:['Wordpress', 'Javascript'],
+            image: require('../../images/signal-allaince.png')
         },
         {
             id:7,
@@ -80,7 +95,7 @@ function Portfolio() {
             <div className="portfolio__header">
                 <img src={require('./portfolio.svg')} alt="portfolio" />PORTFOLIO
             </div>
-            <p className="portfolio__detail">Over the years, these are Outstanding Projects i have worked</p>
+            <p className="portfolio__detail">Over the years, these are Outstanding Projects i have worked on</p>
             <div className="portfolio__project">
               <ProjectTemplate />
             </div>
