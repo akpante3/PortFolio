@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {
-  useParams, useHistory
+  useParams, useHistory, useLocation
 } from "react-router-dom";
 import AwesomeSlider from 'react-awesome-slider';
 import Indroduction from '../introduction/Introduction';
@@ -28,6 +28,7 @@ const templates = list.map((data, index) =>
 
 const  App = () => {
   let history = useHistory()
+  let location = useLocation();
   let { section } = useParams();
   const [showMenu, setshowMenu] = useState(false);
   const [menuClass, setMenuClass] = useState('');
@@ -46,18 +47,19 @@ const  App = () => {
   }
 
   const selectedTemplates = (e) => {
-    const nextIndex = e ? e.nextIndex : section
+    const nextIndex = e ? e.nextIndex : location.pathname
 
-    if ( nextIndex === 0 || nextIndex === 'about') {
+
+    if ( nextIndex === 0 || nextIndex === '/about') {
 		  history.push('/about')
       setselectedTemplate(0)
-     } else if ( nextIndex === 1 || nextIndex === 'portfolio') {
+     } else if ( nextIndex === 1 || nextIndex === '/portfolio') {
       history.push('/portfolio')
       setselectedTemplate(1)
-     } else if ( nextIndex === 2 || nextIndex === 'my-offer') {
+     } else if ( nextIndex === 2 || nextIndex === '/my-offer') {
       history.push('/my-offer')
       setselectedTemplate(2)
-     } else if ( nextIndex === 3 || nextIndex === 'contact') {
+     } else if ( nextIndex === 3 || nextIndex === '/contact') {
       history.push('/contact')
       setselectedTemplate(3)
      } else {
