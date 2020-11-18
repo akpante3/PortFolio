@@ -5,7 +5,7 @@ function Portfolio() {
     const list = [
         {
             id:1,
-            link: 'https://forza-tau.vercel.app/',
+            link: 'https://forzadigital.media/',
             name: 'Forza WEB',
             tech:['ReactJS', 'Firebase', 'SCSS'],
             image: require('../../images/forzaapp.png')
@@ -55,7 +55,7 @@ function Portfolio() {
         },
         {
             id: 6,
-            link: 'http://egf.qkm.mybluehost.me/',
+            link: 'https://www.signalalliance.com/',
             name: 'Signal Allaince',
             tech:['Wordpress', 'Javascript'],
             image: require('../../images/signal-allaince.png')
