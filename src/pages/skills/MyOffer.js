@@ -8,10 +8,10 @@ function Skills() {
   return (
     <div className="my-offer">
        <div className="my-offer__header"><img src={require('../../images/icons/offer.svg')} alt="portfolio" />MY OFFER</div>
-       <div className="portfolio__detail">A full-stack software engineer with over 3 years of experience.</div>
+       <div className="portfolio__detail">A front-end software engineer with over 4 years of experience.</div>
        <div>I have worked with several distributed teams to maintain, develop, and launch multiple projects, being involved in both backend and front-end development.</div>
        <br />
-       <div>My current toolset includes Vue, Vuex, Nodejs, Express, React, Redux, Angular, TypeScript, Docker, AWS and all the other various frameworks, libraries and technologies related to them</div>
+       <div>My current toolset includes Vue, Vuex, Nodejs, Express, React, Redux, TypeScript, Docker, AWS and all the other various frameworks, libraries and technologies related to them</div>
        <br />
        <div>I can help you with all the sides of your project:</div>
        <ul>
@@ -34,7 +34,7 @@ function Skills() {
             <li>refactoring existing applications</li>
           </ul>
        </div>
-       <div>
+       {/* <div>
             <div className="my-offer__header--sub-header"><img src={require('../../images/icons/backend.svg')} alt="portfolio" />BACK-END ENGINEER</div>
             <div className="line"></div>
             <p>In the back-end, I specialize in NodeJS with frameworks like Express and AdonisJS. alternatively, I also skilled in python</p>
@@ -45,7 +45,7 @@ function Skills() {
               <li>refactoring existing applications</li>
               <li>writing unit tests</li>
             </ul>        
-       </div>
+       </div> */}
        <div>
             <div className="my-offer__header--sub-header"><img src={require('../../images/icons/others.svg')} alt="portfolio" />DEV-OPS, DESIGN, UI, PROJECT LEADERSHIP, TEAM MENTORSHIP</div>
             <div className="line"></div>

@@ -4,6 +4,22 @@ import './Portfolio.scss';
 function Portfolio() {
     const list = [
         {
+            id:0,
+            link: 'https://www.gfinityesports.com/',
+            name: 'Gfinity',
+            tech:['Vuejs', 'Vuex', 'SCSS', 'Typescript'],
+            image: require('../../images/gfinity.png')
+        },
+
+        {
+            id: 6,
+            link: 'https://dashboard.flutterwave.com/',
+            name: 'Flutterwave Rave',
+            tech:['VueJS', 'Vuex', 'NodeJs','ExpressJs'],
+            image: require('../../images/Rave-min.png')
+        },
+
+        {
             id:1,
             link: 'https://forzadigital.media/',
             name: 'Forza WEB',
@@ -30,28 +46,6 @@ function Portfolio() {
             name: 'Expense management',
             tech:['VueJS', 'Vuex', 'SCSS', 'NodeJs'],
             image: require('../../images/mouka-expense.png')
-        },
-
-        {
-            id:4,
-            link: 'https://akpante3.github.io/e-commerce-UI-UX/',
-            name: 'ShopMate',
-            tech:['UI/UX', 'Html', 'CSS3'],
-            image: require('../../images/shopmate-min.png')
-        },
-        {
-            id:5,
-            link: 'https://github.com/akpante3/fast-food-fast',
-            name: 'Fast Food Fast',
-            tech:['ReactJS', 'NodeJs','ExpressJs'],
-            image: require('../../images/fast-food.png')
-        },
-        {
-            id: 6,
-            link: 'https://dashboard.flutterwave.com/',
-            name: 'Flutterwave Rave',
-            tech:['VueJS', 'Vuex', 'NodeJs','ExpressJs'],
-            image: require('../../images/Rave-min.png')
         },
         {
             id: 6,
