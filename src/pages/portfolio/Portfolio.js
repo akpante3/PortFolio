@@ -21,7 +21,7 @@ function Portfolio() {
 
         {
             id:1,
-            link: 'https://forzadigital.media/',
+            link: 'https://forza-tau.vercel.app/',
             name: 'Forza WEB',
             tech:['ReactJS', 'Firebase', 'SCSS'],
             image: require('../../images/forzaapp.png')
