@@ -7,7 +7,7 @@ function Skills() {
   }, []);
   return (
     <div className="my-offer">
-       <div className="my-offer__header"><img src={require('../../images/icons/offer.svg')} alt="portfolio" />MY OFFER</div>
+       <div className="my-offer__header"><img src={require('../../images/offer.svg')} alt="portfolio" />MY OFFER</div>
        <div className="portfolio__detail">A front-end software engineer with over 4 years of experience.</div>
        <div>I have worked with several distributed teams to maintain, develop, and launch multiple projects, being involved in both backend and front-end development.</div>
        <br />
@@ -21,7 +21,7 @@ function Skills() {
           <li>researching possible techs,</li>
        </ul>
       <div>
-          <div className="my-offer__header--sub-header"><img src={require('../../images/icons/userInterface.svg')} alt="portfolio" />FRONT-END ENGINEER</div>
+          <div className="my-offer__header--sub-header"><img src={require('../../images/userInterface.svg')} alt="portfolio" />FRONT-END ENGINEER</div>
           <div className="line"></div>
           <div>I specialize in applications written in both React and Vue. other include Angular, TypeScript.</div>
           <br />
@@ -47,7 +47,7 @@ function Skills() {
             </ul>        
        </div> */}
        <div>
-            <div className="my-offer__header--sub-header"><img src={require('../../images/icons/others.svg')} alt="portfolio" />DEV-OPS, DESIGN, UI, PROJECT LEADERSHIP, TEAM MENTORSHIP</div>
+            <div className="my-offer__header--sub-header"><img src={require('../../images/others.svg')} alt="portfolio" />DEV-OPS, DESIGN, UI, PROJECT LEADERSHIP, TEAM MENTORSHIP</div>
             <div className="line"></div>
             <div>Thus, not only I have coded their back-end and front-end codebases, but often I also been invovled in planning and all other aspects of the project:</div>
             <ul>
