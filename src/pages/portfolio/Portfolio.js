@@ -4,7 +4,6 @@ import './Portfolio.scss';
 function Portfolio() {
     const list = [
         {
-            id:0,
             link: 'https://www.gfinityesports.com/',
             name: 'Gfinity',
             tech:['Vuejs', 'Vuex', 'SCSS', 'Typescript'],
@@ -12,7 +11,6 @@ function Portfolio() {
         },
 
         {
-            id: 6,
             link: 'https://dashboard.flutterwave.com/',
             name: 'Flutterwave Rave',
             tech:['VueJS', 'Vuex', 'NodeJs','ExpressJs'],
@@ -20,53 +18,47 @@ function Portfolio() {
         },
 
         {
-            id:1,
             link: 'https://forza-tau.vercel.app/',
             name: 'Forza WEB',
             tech:['ReactJS', 'Firebase', 'SCSS'],
             image: require('../../images/forzaapp.png')
         },
+        {
+            link: 'https://stealthoptional.com/',
+            name: 'Stealth Optional',
+            tech:['VueJS', 'Vuex', 'Typescript', 'SCSS'],
+            image: require('../../images/stealth-optional.png')
+        },
        {
-           id:2,
            link: 'https://dairynomics.netlify.app/',
            name: 'Darynomics',
            tech:['VueJS', 'Vuex', 'SCSS', 'NodeJ', 'Express'],
            image: require('../../images/Dairynomics-min.png')
        },
        {
-            id:3,
             link: 'https://picture-grid-app.now.sh/',
             name: 'Picture Grid',
             tech:['VueJS', 'Vuex', 'Nuxt', 'SCSS'],
             image: require('../../images/grid_app-min.png')
         },
         {
-            id:4,
             link: 'http://mouka-client-dev.tls-flutterwave.com/log-in',
             name: 'Expense management',
             tech:['VueJS', 'Vuex', 'SCSS', 'NodeJs'],
             image: require('../../images/mouka-expense.png')
         },
         {
-            id: 6,
             link: 'https://www.signalalliance.com/',
             name: 'Signal Allaince',
             tech:['Wordpress', 'Javascript'],
             image: require('../../images/signal-allaince.png')
-        },
-        {
-            id:7,
-            link: 'https://event-management-app.now.sh/',
-            name: 'Product',
-            tech:['VueJS', 'UI/UX', 'CSS3'],
-            image: require('../../images/events_1.png')
-        },
+        }
     ]
 
     const ProjectTemplate = () => {
         return (
-            list.map( data => (
-                <div className="portfolio__project__image" key={data.id}>
+            list.map( (data, index) => (
+                <div className="portfolio__project__image" key={index}>
                     <img src={data.image} alt="hello" />
                     <div className="portfolio__project__image__view">
                         <div className="tag tag--button tag--md"><a href={data.link} target='_blank'>View</a></div>
