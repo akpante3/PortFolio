@@ -24,6 +24,12 @@ function Portfolio() {
             image: require('../../images/forzaapp.png')
         },
         {
+            link: 'https://country-search-dusky.vercel.app/',
+            name: 'Country Search',
+            tech:['ReactJS', 'Typescript', 'SCSS'],
+            image: require('../../images/country.png')
+        },
+        {
             link: 'https://stealthoptional.com/',
             name: 'Stealth Optional',
             tech:['VueJS', 'Vuex', 'Typescript', 'SCSS'],
