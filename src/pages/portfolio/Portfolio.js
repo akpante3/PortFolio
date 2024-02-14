@@ -58,6 +58,12 @@ function Portfolio() {
             name: 'Signal Allaince',
             tech:['Wordpress', 'Javascript'],
             image: require('../../images/signal-allaince.png')
+        },
+        {
+            link: 'https://crypto-update-five.vercel.app/',
+            name: 'Crypto Tracker',
+            tech: ['React', 'Javascript'],
+            image: require('../../images/crypto-tracker.png')
         }
     ]
 
