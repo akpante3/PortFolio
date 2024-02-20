@@ -84,8 +84,7 @@ const  App = () => {
         <div className="contact">
             <div className="contact__item"><a target='_blank' href="https://www.linkedin.com/in/victor-obije-a78003187/"><img src={require('../../images/linkedin.svg')} alt="hello" /></a></div>
             <div className="contact__item"><a target='_blank' href="https://github.com/akpante3"><img src={require('../../images/github.svg')} alt="hello" /></a></div>
-            <div className="contact__item"><a target='_blank' href="mailto:obije.victor5@gmail.org"><img src={require('../../images/gmail.svg')} alt="hello" /></a></div>
-            // <div className="contact__item"><a target='_blank' href="https://twitter.com/akpante_kip"><img src={require('../../images/twitter.svg')} alt="hello" /></a></div>
+            <div className="contact__item"><a target='_blank' href="mailto:victorobije.career@gmail.com"><img src={require('../../images/gmail.svg')} alt="hello" /></a></div>
         </div>
         <div className="wrapper">
 		     { selectedTemplate !== null ? (
